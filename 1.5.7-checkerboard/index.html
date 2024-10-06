@@ -6,6 +6,9 @@
                 display:flex;
                 flex-wrap: wrap;
             }
+         
+        
+            
         </style>
     </head>
 	<body>
@@ -14,6 +17,26 @@
 	    for(var i = 0; i < 49; i++)
 	    {
 	        // add your divs here!
+	        
+	        
+	        // 1. Create div (Using createElement) and append
+	        var divItem = document.createElement("div")
+	        document.body.appendChild(divItem)
+	        
+	  
+
+	  
+	       
+	        // 2. Set the colors and size of the div
+	        if (i % 2 == 0) {
+	            divItem.setAttribute("style", "width:14.28%; height:60px; background-color:black")
+	        } else {
+	            divItem.setAttribute("style", " width:14.28%; height:60px; background-color:red")
+	        } 
+	        
+	        
+	        
+	 
 	    }
 	</script>
 	</body>
