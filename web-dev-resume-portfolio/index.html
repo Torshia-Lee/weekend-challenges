@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Resume</title>
+
+       <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src= "app.js"></script>
+       <link rel="stylesheet" type="text/css" href="style.css">
+       
+    </head>
+
+    <body>
+        <!-- // Section with my name and personal info. Maybe a background photo with faded opacity. -->
+        <div id = "personal-info" class="align-center">
+            <h1 class="header">Torshia Lee</h1>
+            <div id ="personal-info-content">
+                <p>Torshwlee@gmail.com | 651-263-6511 | 
+                <a href = "https://www.linkedin.com/in/torshia-lee-353285211/">LinkedIn</a></p>
+            </div>
+                
+            
+        </div>
+
+
+        <!-- //Section with my education info/photo of my school as background.  -->
+        <div id = "education" class="align-center">
+            <h2 class="header">Education</h2>
+            <p>Metropolitan State University | Bachelor of Science: Management Information System</p>
+
+        </div>
+        
+
+        <!-- //Section with my work experience
+        //Background color  -->
+        <div id = "work-exp" class="align-center">
+            <h2 class="header" id="exp-header" onclick = "showContent('#exp-header','#work-exp','#work-exp-content')">Work Experience</h2>
+            <div id = "work-exp-content" class ="display-hide">
+                <h3 class="header">Assembly Operator - Pentair</h3>
+                <p>July 2019 - August 2019</p>
+                <ul class="work-exp-tasks">
+                    <li>Operating machine and collecting performance data to analyze in Microsoft Excel.</li>
+                    <li>Create visual representation of data</li>
+                    <li>Data analysis helped streamline processes and increase total output by 5%.</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+        <!-- // Section with the skills I have
+        // Background color 
+        // Create a table with unordered list  
+        // Pop up animation -->
+        <div id = "skills" class="align-center">
+            <h2 class="header" id="skills-header" onclick = "showContent('#skills-header','#skills','#skills-table')">Skills</h2>
+            <table class = "display-hide" id="skills-table">
+                <tr>
+                    <td><li>MySQL</li></td>
+                    <td><li>Tableau</li></td>
+                    <td><li>PowerApps</li></td>
+                </tr>
+                <tr>
+                    <td><li>Microsoft Office</li></td>
+                    <td><li>Linux</li></td>
+                    <td><li>SAP</li></td>
+                </tr>
+                <tr>
+                    <td><li>Python</li></td>
+                    <td><li>Java</li></td>
+                    <td><li>COBIT</li></td>
+                </tr>
+                <tr>
+                    <td><li>Html</li></td>
+                    <td><li>JavaScript</li></td>
+                    <td><li>CSS</li></td>
+                </tr>
+            </table>
+
+        </div>
+
+
+
+        <!-- // Section with projects 
+        // Background color 
+        // Lists only the name of projects and when clicked, displays more information -->
+        <div id = "activities" class="align-center">
+            <h2 class="header" id="activities-header" onclick = "showContent('#activities-header','#activities','#activity-one')">Activities</h2>
+            
+            <div id ="activities-content">
+                <div class="display-hide" id="activity-one" onclick = 'scrollActivity("#activity-one", "#activity-two")'>
+                    <h4 class="header"> 1. Manufacture Sales</h4>
+                    <ul class="activity-lists">
+                        <li>Use pivot tables and Vlookup to analyze sales by state, sales per customer, and orders by product.</li>
+                        <li>Use Tableau to create visual representation. Found the state with the most sales, the customer
+                        who bought the most products, and the most bought product overall.</li>
+                    </ul>
+                </div>
+            
+                <div class="display-hide" id="activity-two" onclick = 'scrollActivity("#activity-two", "#activity-three")'>
+                    <h4 class="header"> 2. Temperature Data Analysis</h4>
+                    <ul class="activity-lists">
+                        <li>Extract data via online and used Microsoft Excel to create a pivot table and charts to analyze
+                            the data.</li>
+                    </ul>
+                </div>
+
+                <div class="display-hide" id="activity-three" onclick = 'scrollActivity("#activity-three", "#activity-four")'>
+                    <h4 class="header"> 3. Workout tracker</h4>
+                    <ul class="activity-lists">
+                        <li>Create Google Forms for user input</li>
+                        <li>Log data in Google Sheets</li>
+                        <li>Coded in Apps Script to automate data cleaning and create graphs to represent volume
+                            progression</li>
+                    </ul>
+                </div>
+
+                <div class="display-hide" id="activity-four" onclick = 'scrollActivity("#activity-four", "#activity-five")'>
+                    <h4 class="header"> 4. MySQL Employee Project</h4>
+                    <ul class="activity-lists">
+                        <li>Extract information and input it in SQL</li>
+                        <li>Familiarize with joins, temp tables, subqueries, and stored procedures</li>
+                        <li>Used Excel and Tableau to create dashboard to represent the increase of individual employee
+                            wages over time.</li>
+                    </ul>
+                </div>
+
+                <div class="display-hide" id="activity-five" onclick = 'scrollActivity("#activity-five", "#activity-one")'>
+                    <h4 class="header"> 5. MySQL World Layoffs</h4>
+                    <ul class="activity-lists">
+                        <li>Data cleaning by removing duplicates, standardizing data, populating null/blank values, and
+                            removing columns</li>
+                        <li>Exploratory data analysis.</li>
+                        <li>Familiarize with UPDATE/DELETE, ALTER TABLE, MODIFY COLUMN, DROP COLUMN, TRIM</li>
+                    </ul>
+                </div>
+            </div>
+         
+
+        </div>
+
+
+
+
+    </body>
+</html>
