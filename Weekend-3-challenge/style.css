@@ -1,0 +1,29 @@
+html, body{
+    justify-content: center;
+    height: 100%;
+    
+}
+
+footer{
+    display: flex;
+    align-items: bottom;
+}
+html{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+}
+
+.container{
+    padding: 20px;
+    color: white;
+}
+
+#weather-info {
+    border-style: solid;
+    margin: 10px;
+}
+
+body{
+    text-align: center;
+}
